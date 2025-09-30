@@ -1,18 +1,153 @@
-<!doctype html>
-<head>
-    <title>Hello Azure - Python Quickstart</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
-    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
-</head>
 <html>
-   <body>
-     <main>
-        <div class="px-4 py-3 my-2 text-center">
-            <img class="d-block mx-auto mb-4" src="{{ url_for('static', filename='images/azure-icon.svg') }}" alt="Azure Logo" width="192" height="192"/>
-            <!-- <img  src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
-            <h1 class="display-6 fw-bold text-primary">Welcome to Azure</h1>            
-          </div>
-        <form method="post" action="{{url_for('hello')}}">
+
+
+	<head>
+	
+		<title> Hello TOEX </title>
+		
+		<link rel="icon" type="image/x-icon" href="/images/toeX.png">
+		
+
+
+		<style>
+
+
+
+			body {
+
+			font-family:"Century Gothic", sans-serif;						
+
+			}
+
+
+			#navbar {
+			
+			position: absolute;
+			left: 0%;
+			top: 0%;
+			height: 10%;
+			width: 100%;
+			background: linear-gradient(to left, #ff9933 0%, #ff99cc 100%);
+			}
+			
+			#navtable {
+			
+			position: absolute;
+			top: 10%;
+			left: 5%;
+			height: 80%;
+			width: 90%;
+			text-align: center;
+			font-size: 22px;
+			
+			}
+			
+			#sidebar {
+			
+			position: absolute;
+			left: 0%;
+			top: 10%;
+			height: 90%;
+			width: 100%;
+			background: linear-gradient(to top left, #ff9933 0%, #ff99cc 100%);
+			z-index: -1;
+			}
+			
+			
+			
+			#pagecontent {
+			
+			position: absolute;
+			left: 2%;
+			top: 10%;
+			height: 90%;
+			width: 98%;
+			background-color: #404040;
+			color: white;
+			text-align: center;
+			}
+
+			.searchbut {
+			
+			width: 17%;
+			height: 5%;
+			background: linear-gradient(to left, #808080 0%, #3d2932 100%);
+			border: 1px solid darkgrey;
+			border-radius: 5px;
+			color: white;
+			
+			}
+			
+			
+			.searchbut:hover {
+			
+			width: 17%;
+			height: 5%;
+			background: linear-gradient(to left, #808080 0%, #3d2932 100%);
+			border: 2px solid orange;
+			border-radius: 5px;
+			color: orange;
+			
+			}
+
+
+
+		</style>
+	
+	
+		
+	</head>
+	
+	
+	
+	
+	<body>
+	
+		
+		
+		<div id = "navbar">
+		
+			<table id = "navtable">
+
+			<td class="navrow"><a style="color: white;" href="input.html">Calculation App</a></td>
+			
+			<tr>
+			
+
+				
+			
+			</tr>
+			
+			</table>
+		
+		</div>
+		
+		
+		<div id = "sidebar">
+		
+			<img src="/images/toeX2.png" style="left: 0%; top: 0%; width: 2%; z-index=100;">
+		<div style="height: 100%; width: 100%; opacity: 0.75; background-color: black;"></div>
+		</div>
+		
+		
+		
+		
+		<div id = "pagecontent">
+		
+			<br>
+			
+			
+			
+			<br>
+			
+			<img src='/images/whitetoex.png' style = "width:25%;">
+
+	<br><br>	<br><br>
+
+
+
+
+<form method="post" action="{{url_for('hello')}}">
             <div class="col-md-6 mx-auto text-center">
                 <label for="name" class="form-label fw-bold fs-5">Could you please tell me your name?</label>
 
@@ -25,6 +160,10 @@
                 </div>            
             </div>
         </form>
-     </main>      
-   </body>
+
+		
+		
+	</body>
+
+
 </html>

@@ -1,7 +1,7 @@
 <h1> DIA Web Dev Course - Appservice example.</h1>
 <br><br>
 Within the Azure CLI:
-
+<br><br>
 <code> git clone https://github.com/horsenoiseadministrator/webappcourse (to import the flask application code & files)</code>
 
 
